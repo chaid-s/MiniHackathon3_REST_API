@@ -1,12 +1,9 @@
 package com.perscholas.RestApi_Group4.controllers;
 
-import org.springframework.ui.Model;		// MIGHT NEED TO SWITCH TO BELOW Model IMPORT LATER
-// import ch.qos.logback.core.model.Model;	
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 

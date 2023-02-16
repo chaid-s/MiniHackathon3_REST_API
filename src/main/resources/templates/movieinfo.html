@@ -2,9 +2,59 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <link th:replace="fragments/global_head"></link>
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Movie Info</title>
 </head>
 <body>
+
+	<div class="container">
+		<div class="my-3">
+			<h4>Movie</h4>
+			<table class="table table-striped">
+		    <thead>
+		      <tr>
+		        <th>Title</th>
+		        <th>Year</th>
+		        <th>Rated</th>
+		        <th>Released</th>
+		        <th>Runtime</th>
+		        <th>Genre</th>
+		        <th>Director</th>
+		        <th>Writer</th>
+		        <th>Actors</th>
+		        <th>Plot</th>
+		        <th>Language</th>
+		        <th>Country</th>
+		        <th>Awards</th>
+		        <th>Poster</th>
+		        <th>Ratings</th>
+		      </tr>
+		    </thead>
+		
+		    <tbody>
+		    <!-- <tr th:each="movie: ${movieList}"> -->
+		        <tr>
+		            <td th:text="${movie.title}" />
+		            <td th:text="${movie.year}" />
+		            <td th:text="${movie.rated}" />
+		            <td th:text="${movie.released}" />
+		            <td th:text="${movie.runtime}" />
+		            <td th:text="${movie.genre}" />
+		            <td th:text="${movie.director}" />
+		            <td th:text="${movie.writer}" />
+		            <td th:text="${movie.actors}" />
+		            <td th:text="${movie.plot}" />
+		            <td th:text="${movie.language}" />
+		            <td th:text="${movie.country}" />
+		            <td th:text="${movie.awards}" />
+		            <td th:text="${movie.poster}" />
+		            <td th:text="${movie.ratings}" />
+		        </tr>
+		    </tbody>
+		</table>
+		<img alt="Movie Poster" th:src="${movie.poster}">
+		</div>
+	</div>
 
 </body>
 </html>

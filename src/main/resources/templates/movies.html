@@ -3,16 +3,16 @@
 <head>
     <link th:replace="fragments/global_head">
     <title>Movie Info Search</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="css\style.css" rel="stylesheet" media="screen"in/>
 </head>
-<body class="background">
+<body class="background" style = "background-image: linear-gradient(rgba(132, 137, 164, 0.9), rgba(57, 65, 109, 0.9)), url(./images/background.jpg)">
     <div>
         <h1>Find a Movie</h1>
     </div>
     <main class="container">
         <div class="form">
             <form class="search-bar" th:action="@{/movieinfo}" th:object="${myMovie}" method="post">            
-    	    <input type="text" placeholder = "Movie Name" class="form-control" th:field="*{title}">
+    	    <input type="text" placeholder = "Movie Name" class="form-control" th:field="*{title}">        
             <button type="submit"><img src="./images/search.png"></button>
         </form>
     </div>

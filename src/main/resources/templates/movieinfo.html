@@ -3,6 +3,21 @@
 <head>
     <link th:replace="fragments/global_head"></link>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+    	body {    		
+  			background-image: url("https://wallpaperaccess.com/full/5206080.jpg");
+  			color: beige;
+    	}
+    	span {
+    		color: white;
+    	}
+    	table.table th {
+    		color: beige;
+    	}
+    	table.table td {
+    		color: white;
+    	}
+    </style>
     <title>Movie Info</title>
 </head>
 <body>
@@ -47,7 +62,7 @@
 		            <td th:text="${movie.language}" />
 		            <td th:text="${movie.country}" />
 		            <td th:text="${movie.awards}" />
-		            <td th:text="${movie.poster}" />
+		            <td><img alt="Movie Poster" th:src="${movie.poster}"></td>
 		            <td th:text="${movie.ratings}" />
 		        </tr>
 		    </tbody>

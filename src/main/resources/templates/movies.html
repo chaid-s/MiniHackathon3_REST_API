@@ -7,7 +7,7 @@
 <body>
     <form th:action="@{/movieinfo}" th:object="${myMovie}" method="post">            
     	<label>Movie Name</label>
-    	<input type="text" class="form-control" th:field="*{name}">        
+    	<input type="text" class="form-control" th:field="*{title}">        
         <button type="submit">Submit Name</button>
     </form>    
 </body>

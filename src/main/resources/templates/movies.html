@@ -12,7 +12,7 @@
     <main class="container">
         <div class="form">
             <form class="search-bar" th:action="@{/movieinfo}" th:object="${myMovie}" method="post">            
-    	    <input type="text" placeholder = "Movie Name" class="form-control" th:field="*{name}">        
+    	    <input type="text" placeholder = "Movie Name" class="form-control" th:field="*{title}">
             <button type="submit"><img src="./images/search.png"></button>
         </form>
     </div>
